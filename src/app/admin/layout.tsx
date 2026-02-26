@@ -61,7 +61,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           <nav className="space-y-2">
             <Link href="/admin/pengaturan" className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg"><Store className="h-5 w-5" /><span className="font-medium">Pengaturan Toko</span></Link>
             <Link href="/admin/katalog" className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg"><Package className="h-5 w-5" /><span className="font-medium">Kelola Katalog</span></Link>
-            <Link href="/admin/galeri" className="flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg"><ImageIcon className="h-5 w-5" /><span className="font-medium">Galeri Visual</span></Link>
           </nav>
         </div>
         <div className="p-6 border-t border-gray-100">

@@ -4,7 +4,7 @@ import { UserPlus, Mail, Lock, Store, Link as LinkIcon, CheckCircle, Palette, Sh
 import { supabase } from '@/lib/supabase';
 
 // TUGAS 2.1: PIN RAHASIA SUPER ADMIN (Silakan ganti sesuai selera Anda)
-const MASTER_PIN = "WEB30ADMIN"; 
+const MASTER_PIN = "yvre5xw453s5785d676f87oguybtvr3423swdefrgh8our4c5678pvliyg"; 
 
 export default function SuperAdminRegisterPage() {
   // State untuk Layar Gembok
@@ -18,7 +18,7 @@ export default function SuperAdminRegisterPage() {
   const [namaToko, setNamaToko] = useState('');
   const [slug, setSlug] = useState('');
   
-  // State Racikan Tema (JSON)
+  // State Racikan Tema (JSON) Default ke V1
   const [themeHeader, setThemeHeader] = useState('v1');
   const [themeHero, setThemeHero] = useState('v1');
   const [themeCatalog, setThemeCatalog] = useState('v1');
@@ -46,8 +46,11 @@ export default function SuperAdminRegisterPage() {
     setSlug(urlSlug);
   };
 
+  // FUNGSI DI-UPGRADE: Mengacak dari 5 Tema!
   const handleRandomizeTheme = () => {
-    const getRandom = () => Math.random() > 0.5 ? 'v1' : 'v2';
+    const themes = ['v1', 'v2', 'v3', 'v4', 'v5'];
+    const getRandom = () => themes[Math.floor(Math.random() * themes.length)];
+    
     setThemeHeader(getRandom()); 
     setThemeHero(getRandom());
     setThemeCatalog(getRandom()); 
@@ -142,7 +145,6 @@ export default function SuperAdminRegisterPage() {
             </div>
           )}
 
-          {/* TUGAS 2.2: UI HIGH CONTRAST (Teks hitam pekat, background putih/abu terang, font bold) */}
           <form onSubmit={handleGenerateClient} className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               
@@ -198,8 +200,11 @@ export default function SuperAdminRegisterPage() {
                   <div key={idx}>
                     <label className="block text-xs font-bold text-slate-500 mb-2 uppercase tracking-wider">{item.label}</label>
                     <select value={item.val} onChange={(e)=>item.set(e.target.value)} className="w-full px-3 py-3 border-2 border-slate-200 rounded-lg bg-slate-50 text-slate-900 font-bold focus:border-blue-600 outline-none cursor-pointer">
-                      <option value="v1">Desain V1</option>
-                      <option value="v2">Desain V2</option>
+                      <option value="v1">🌙 V1: Ramadhan</option>
+                      <option value="v2">🖤 V2: Premium Dark</option>
+                      <option value="v3">💎 V3: Luxury Elegance</option>
+                      <option value="v4">🎈 V4: Kartun Ceria</option>
+                      <option value="v5">🍂 V5: Kultur Klasik</option>
                     </select>
                   </div>
                 ))}

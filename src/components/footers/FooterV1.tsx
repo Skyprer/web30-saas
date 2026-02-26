@@ -3,18 +3,17 @@ import Link from 'next/link';
 
 export const FooterV1 = ({ namaToko }: { namaToko: string }) => {
   return (
-    <footer className="bg-white border-t-2 border-slate-100 pt-10 pb-6 mt-12">
+    <footer className="bg-emerald-900 pt-12 pb-6 mt-12 border-t-4 border-amber-400">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h3 className="font-black text-slate-900 text-xl mb-4">{namaToko}</h3>
-        <p className="text-slate-500 font-medium text-sm mb-8">
-          Terima kasih telah berbelanja di toko kami. Kepuasan Anda adalah prioritas kami.
+        <h3 className="font-black text-amber-400 text-2xl mb-4">{namaToko}</h3>
+        <p className="text-emerald-100 font-medium text-sm mb-8 max-w-md mx-auto">
+          Terima kasih telah mempercayakan kebutuhan Anda kepada kami. Semoga Allah memberikan keberkahan untuk kita semua.
         </p>
         
-        {/* CREDIT SAAS WEB30 (VIRAL LOOP) */}
-        <div className="pt-6 border-t border-slate-100 flex flex-col items-center justify-center">
-          <p className="text-xs font-bold text-slate-400 mb-1">Diberdayakan oleh</p>
-          <Link href="/" target="_blank" className="inline-flex items-center gap-1 text-sm font-black text-slate-300 hover:text-blue-600 transition-colors">
-            ⚡ Web30 Platform
+        <div className="pt-6 border-t border-emerald-800 flex flex-col items-center justify-center">
+          <p className="text-xs font-bold text-emerald-500 mb-1">Diberdayakan oleh</p>
+          <Link href="/" target="_blank" className="inline-flex items-center gap-1 text-sm font-black text-emerald-400 hover:text-amber-400 transition-colors">
+            🌙 Web30 Platform
           </Link>
         </div>
       </div>

@@ -24,18 +24,18 @@ export default function Web30LandingPage() {
       {/* HERO SECTION */}
       <section className="pt-40 pb-20 px-6 text-center max-w-5xl mx-auto">
         <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-100 border-2 border-blue-200 text-blue-800 font-black text-sm mb-8">
-          <Zap className="h-4 w-4 text-blue-600" /> Platform Website UMKM #1 di Indonesia
+          <Zap className="h-4 w-4 text-blue-600" /> Website Builder Untuk UMKM Indonesia
         </div>
         <h1 className="text-5xl md:text-7xl font-black text-slate-900 mb-8 leading-[1.1] tracking-tight">
-          Website Toko Cerdas, <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Langsung Masuk WA.</span>
+          Dapatkan Website untuk Produk Anda <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">GRATIS!</span>
         </h1>
         <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
-          Tinggalkan cara manual. Kami buatkan website estetik untuk tokomu, lengkap dengan manajemen stok, label diskon, dan checkout WhatsApp otomatis. Terima beres!
+          Tinggalkan cara manual. Kami buatkan website estetik untuk tokomu, lengkap dengan manajemen stok, label diskon, dan checkout WhatsApp otomatis. Makin Cuan!
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20Web30,%20saya%20ingin%20membuat%20website!" target="_blank" rel="noreferrer" className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-black text-lg rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105 flex items-center justify-center gap-2 border-b-4 border-blue-800">
-            Buat Website Sekarang
+          <a href="https://wa.me/6288216661965?text=Halo%20Admin%20Web30,%20saya%20ingin%20membuat%20website!" target="_blank" rel="noreferrer" className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-black text-lg rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105 flex items-center justify-center gap-2 border-b-4 border-blue-800">
+            Pesan Website Sekarang
           </a>
           <Link href="/admin/login" className="w-full sm:w-auto px-8 py-4 bg-white border-2 border-slate-300 hover:border-slate-800 hover:text-slate-900 text-slate-600 font-black text-lg rounded-xl transition-all flex items-center justify-center gap-2">
             Login ke Dashboard
@@ -47,7 +47,7 @@ export default function Web30LandingPage() {
       <section className="py-24 bg-white border-y-2 border-slate-200">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">Fitur Kelas Enterprise, Harga UMKM</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">Solusi Digital UMKM</h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -82,7 +82,7 @@ export default function Web30LandingPage() {
           <div className="flex items-center justify-center gap-2 text-white font-black text-2xl mb-6">
             <Store className="h-7 w-7 text-blue-500" /> Web30
           </div>
-          <p className="text-slate-400 font-medium">© {new Date().getFullYear()} Web30 Platform. Semua hak cipta dilindungi.</p>
+          <p className="text-slate-400 font-medium">© {new Date().getFullYear()} Web30 Platform All Rights Reserved</p>
         </div>
       </footer>
 
